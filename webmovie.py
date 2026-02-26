@@ -3,6 +3,7 @@ import pickle
 import requests
 from difflib import get_close_matches
 
+##
 # Load trained model
 with open('D:/movierecommend/movie_recommendation_model.pkl', 'rb') as model_file:
     model_data = pickle.load(model_file)
@@ -73,3 +74,4 @@ if st.button("Get Recommendations"):
                     st.write(f"**{movie}**")
     else:
         st.warning("Please enter a movie name.")
+
